@@ -74,11 +74,136 @@
     }
 test07();
     
-    var test08=function(){
+    
+  var test08=function(){
+          console.log("-UI Operations-");//Hello
+        var a="Hello";
+        alert(a);
+    }
+    test08();
+    
+    
+    var test10=function(){
+        console.log("-UI Operations(prompt, years)-");//prompt
+        var years=prompt("how old are you", "1-100");
+        alert("you are "+years+" years old");
+    }
+    test10();
+    
+    var test09=function(){
         var access=parseInt("10110", 2);
         console.log(access);
     }
-    test08();
+    test09();
+    var test11=function(){
+        console.log("-UI Operations(confirm,admin)-");
+        var isAdmin=confirm("are u admin?");
+        alert(isAdmin);
+    }
+    test11();
+    
+    var test12=function(){
+        console.log("-task3(name)-")
+        var name=prompt("what is your name", "-your name-");
+        alert("welcome "+name);
+    }
+     test12();
+    var test13=function(){
+        console.log("opearator if(ecma)")
+        var year=prompt("in which year ecma-262 was based?", "")
+        if(year!=2011){
+        alert("and this is..")
+        alert("incorrect")
+        }
+        else{
+            alert("wright!")
+        }
+    }
+    test13();
+    
+    var test14=function(){
+        console.log("-opeator else if-");
+        var year=prompt("in which year ecma-262 was based?", "");
+        if(year<2011){
+            alert("this is too early")
+        }
+        else if(year>2011){
+            alert("this is too late")
+        }
+        else{
+            alert("thats wright!")
+        }
+    }
+    test14();
+    
+    var test15=function(){
+        console.log("-operator ?-");
+        var access;
+        var age=prompt("how old are u?", "");
+        access=(age>14) ? true:false;
+        alert(access);
+    }
+    test15();
+    
+ var test16=function(){
+        console.log("-a few   *?*   operators-");
+        var age=prompt("how old are u?", "");
+        var message=(age<3) ? "hello baby" :
+        (age<18) ? "hello !" :
+        (age<100) ? "good day" :
+        "what r u?)";
+        
+        alert(message);
+    }
+    test16();
+    
+ var test17=function(){
+     var message=prompt("what is real name of JS", "");
+        if(message=="EcmaScript"){
+            alert("Thats wright")
+        }
+        else{
+            alert("dont know?? EcmaScript!!!")
+        }
+    
+    }
+//    test17();
+    var test18=function(){
+        var message=prompt("kjfhksjhf?", "");
+        if(message>0){
+            alert("1")
+        }
+        else if(message<0)
+            {
+                alert("-1")
+            }
+        else{alert("0")}
+    }
+
+    test18();
+    
+    
+    var test19=function(){
+        console.log("-login inspection-");
+        var answer=prompt("enter your login", "");
+        if(answer=="admin")
+            {
+                var pass=prompt("enter your password","");
+                if(pass=="black vlastelin")
+                    {alert("welcome")}
+                else if(pass==null)
+                    {alert("access error")}
+                else{alert("password incorrect")}
+            }
+        else if(answer==null)
+            {alert("access error")}
+        else{alert("i dont know u")}
+        
+        
+    }
+    test19();
+   
+    
     
     var test0 = function() {
         
