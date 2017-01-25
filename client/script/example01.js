@@ -1,17 +1,10 @@
 (function() {
     "use strict";
     
-<<<<<<< HEAD
-    console.log("Javascript basics");
-    
-    var test01 = function() {
-        console.log("Unary plus test");
-=======
     console.log("***Javascript basics***");
     
     var test01 = function() {
         console.log("-Unary plus test-");
->>>>>>> origin/master
         
         console.log( +(1-2)); // -1
         
@@ -19,18 +12,6 @@
         console.log( typeof a ); // string
         console.log( typeof (+a) ); // number
     };
-<<<<<<< HEAD
-    
-    test01();
-
-    
-    var test02 = function() {
-        console.log("Binary plus test");
-        
-        
-    };
-    test02();
-=======
     test01();
     
     var test02=function(){
@@ -108,6 +89,5 @@ test07();
         console.log(admin);
     };
     test0();
->>>>>>> origin/master
     
 })();
