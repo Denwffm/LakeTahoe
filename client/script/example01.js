@@ -202,18 +202,24 @@ test07();
         
     }
     test19();
-   
     
+    var test20=function(){
+        console.log("-operators && || !-")
+        var age=prompt("enter age pls", "");
+        if(!(age > 14 && age < 90)){
+            alert("correct!");
+        }
+            else {
+                alert("incorrect");
+            }
+        }
+    test20();
     
-    var test0 = function() {
+    var test21=function(){
         
-        console.log("***variables***");
-        var admin;
-        var name = "Vasiliy";
-        admin = name;
-        console.log(admin);
-    };
-    test0();
+    }
+    
+
     
 
 })();
