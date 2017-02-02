@@ -1,0 +1,8 @@
+.block{
+		margin:100px;
+			border:30px solid black;
+			height: 150px;
+			background-color:darkorange;
+			border-image:url(border.png) 35 26 26 26 repeat;
+}
+
