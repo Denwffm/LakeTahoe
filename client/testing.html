@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+    <script>
+       var assert = chai.assert;
+    </script>
+</head>
+
+  <body>
+<script>
+        function pow(x,n){
+        var res=x;
+        for(var i=1; i<n; i++){
+           res*=x;
+        }
+        return res;
+        }
+//        var x=prompt("ent x");
+        var n=prompt("ent n");
+        alert(pow(x,n));
+</script>
+      
+      
+<script>
+        describe("pow", function() {
+
+            it("возводит 2 в 3-ю степень", function() {
+            assert.equal(pow(2, 3), 8);
+            });
+
+            it("возводит 3 в 4-ю степень", function() {
+            assert.equal(pow(3,4), 81);
+            });
+
+        });
+</script>
+  
+   <div id="mocha"></div>
+    
+      <script>mocha.run();</script> 
+    
+
+  </body>
+</html>

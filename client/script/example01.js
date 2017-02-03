@@ -582,9 +582,9 @@
 //            return n;
 //        }
 //    }
-//    var n=+prompt("ent n");
+//    var n = +prompt("ent n");
 //    alert(fib(n));
-    
+//    
 //    
 //    function fib(n){
 //        var sum;
@@ -600,6 +600,19 @@
 //    else{
 //        alert("error");
 //    }
-//
     
+    
+    function pow(x,n){
+       var res=x;
+       for(var i=1; i<n; i++){
+           res*=x;
+       }
+       return res;
+   }
+    var x=prompt("ent x");
+    var n=prompt("ent n");
+    alert(pow(x,n));
+    
+    
+  
   })();
