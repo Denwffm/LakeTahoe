@@ -574,7 +574,7 @@
 //    var n=+prompt("ent n");
 //    alert(factorial(n));
 //////    
-//    function fib(n){  // вычисление чисел фибоначчи с помощью рекурсии
+//    function fib (n){  // вычисление чисел фибоначчи с помощью рекурсии
 //        if(n>1){
 //            return fib(n-1) + fib(n-2);
 //        }
@@ -584,35 +584,69 @@
 //    }
 //    var n = +prompt("ent n");
 //    alert(fib(n));
-//    
-//    
-//    function fib(n){
-//        var sum;
-//        for(var i=0; i<n; i++){
-//            sum+= fib(n-1) + fib(n-2);
+    
+    
+//    function fib(n){ // updated, не забыть!!! решить fib с помощью math.pow()
+//     var a=1;
+//     var b=1;
+//        for(var i=3; i<=n; i++){
+//            var c=a+b;
+//            a=b;
+//            b=c;
 //        }
-//        return sum;
+//        return b;
 //    }
-//    var n = +prompt("ent n");
-//    if(n>1){
+//        var n=+prompt("ENT N");
 //        alert(fib(n));
+//        
+    
+    
+//    function pow(x,n){ // возведение в степень
+//       var res=x;
+//       for(var i=1; i<n; i++){
+//           res*=x;
+//       }
+//       return res;
+//   }
+//    var x=prompt("ent x");
+//    var n=prompt("ent n");
+//    alert(pow(x,n));
+    
+//    function area(a,b,c){ // площадь квадрата 
+//        return a*b;
+//    }    
+//  var a=+prompt("a?");
+//    var b=+prompt("b?");
+// alert("area is " + area(a,b));
+// 
+//    function cylarea(h,d){ // площадь цилиндра
+//        return 3.14 * h * d;
 //    }
-//    else{
-//        alert("error");
+//    var h=prompt("ent h");
+//    var d=prompt("ent d");
+//    alert("cylarea is " + cylarea(h,d));
+//    
+    
+//    function Pif(n,m){ // гипотенуза
+//        return Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
 //    }
-    
-    
-    function pow(x,n){
-       var res=x;
-       for(var i=1; i<n; i++){
-           res*=x;
-       }
-       return res;
-   }
-    var x=prompt("ent x");
-    var n=prompt("ent n");
-    alert(pow(x,n));
-    
+//    var n=prompt("ent n");
+//    var m=prompt("ent m");
+//    alert("gep in square is "+ Pif(n,m));
     
   
+//    function credit(Pereplata, MonthPay, UPay){ // переплата по ипотечному кредиту
+//    var MonthPay = (D*(i/m)) / (1 - (1 / Math.pow(1+(i/m), n*m)));
+//    var UPay = MonthPay*(n*m);
+//    var Pereplata = UPay-D;
+//    return Pereplata;
+//    }
+//    var D=+prompt("sum of credit?");
+//    var i=+prompt("rate?");
+//    var m=12;
+//    var n=+prompt("time?(in years)");
+//    alert("pereplata is " + credit());
+//    
+                 
   })();
+    

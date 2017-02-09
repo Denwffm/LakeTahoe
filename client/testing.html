@@ -18,29 +18,71 @@
 <script>
         function pow(x,n){
         var res=x;
+            if(n<0){
+                return NaN;
+            }
+            if(Math.round(n)!=n){
+                return NaN;
+            }
         for(var i=1; i<n; i++){
            res*=x;
         }
         return res;
         }
 //        var x=prompt("ent x");
-        var n=prompt("ent n");
+//        var n=prompt("ent n");
         alert(pow(x,n));
 </script>
       
       
 <script>
         describe("pow", function() {
-
-            it("возводит 2 в 3-ю степень", function() {
-            assert.equal(pow(2, 3), 8);
+          
+            describe("возводит х в степень n", function(){
+            function makeTest(x){
+                var expected=x*x*x;
+                it("при возведении любого "+x+" в степень 3 результат "+ expected, function(){
+                assert.equal(pow(x,3), expected);
+                })
+            }
+            
+            for( var x=1;x<=5;x++){
+                makeTest(x);
+            }
+          });
+        
+        
+            it("при воздведении в отрицательную степень - результат NaN", function(){
+                assert(isNaN(pow(2, -1)), "pow(2, -1) не NaN");
             });
-
-            it("возводит 3 в 4-ю степень", function() {
-            assert.equal(pow(3,4), 81);
+            
+            it("при возведении в дробную степень - результат NaN", function(){
+               assert(isNaN(pow(2, 1.5)), "pow(2, 1.5) не NaN");
             });
-
+        
+        
+        
+        
+        
+        
         });
+            
+//            before(function() {alert("start"); })
+//            after(function() {alert("end"); });
+//            
+//            beforeEach(function() {alert("in test"); });
+//            afterEach(function() {alert("out test"); });
+//
+//            it("возводит 2 в 3-ю степень", function() {
+//            assert.equal(pow(2, 3), 8);
+//            });
+//
+//            it("возводит 3 в 4-ю степень", function() {
+//            assert.equal(pow(3,4), 81);
+//            });
+//            
+//
+//        });
 </script>
   
    <div id="mocha"></div>
